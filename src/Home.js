@@ -21,7 +21,7 @@ function Home() {
         setInputText={setInputText}
       />
       <List setItems={setItems} items={items} />
-      <button className="refresh-btn" onClick={refreshPage}>New list</button>
+      <button className="refresh-btn" onClick={refreshPage}>Refresh List</button>
     </div>
   );
 }
