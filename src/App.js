@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './Home'
+import {Link } from "react-router-dom";
+import logo from './logo.png';
+import groceries from './groceries.png'
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="app-wrap">
+        <img className="groceries-image" src={groceries} />
+        <img className="logo" src={logo} />
+        <Link to="/Home">
+          <button className="newlist-btn">
+            New list
+          </button>
+        </Link>
+      </div>
+    );
 }
 
 export default App;
